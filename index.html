@@ -4,198 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Web Player: Music for everyone</title>                         
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-
+    <title>Sundown Studio</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-    <div class="container flex">
-        <div class="left">
-            <div class="home rounded bg-gray p-1">
-                <div class="logo">
-                    <img width="150" class="invert" src="logo.svg" alt="">
-                </div>
-                <ul>
-                    <li><img class="invert" src="home.svg" alt="">Home</li>
-                    <li><img class="invert" src="search.svg" alt="">Search</li>
-                </ul>
-                <img class="invert close" src="close.svg" alt="">
-            </div>
-            <div class="library rounded bg-gray m-1">
-                <div class="libnav flex p-1">
-                    <div class="heading">
-                        <img class="invert" height="23px" src="lib.svg" alt="">
-                        <h4>
-                            Your library
-                        </h4>
-                    </div>
-                    <div class="plus">
-                        <i class="ri-add-line"></i>
-                    </div>
-                </div>
-                <div class="songList">
-                    <ul>
-                       
+    <div class="fixedimage">
 
-                    </ul>
-                </div>
-
-
-
-                <div class="footer">
-                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/privacy/"><span>Privacy Center</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
-                    </div>
-                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
-                    </div>
-                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="header rounded bg-gray">
-                <div class="nav">
-                    <img class="invert hamburger" src="hamburger.svg" alt="">
-                    <i class="ri-arrow-left-s-line"></i>
-                    <i class="ri-arrow-right-s-line"></i>
-
-                </div>
-                <div class="button">
-                    <h3>Sign up </h3>
-                    <button>Log in</button>
-                </div>
-            </div>
-
-            <div class="spotifyplaylist">
-                <h2>Spotify Playlist</h2>
-                <h3>Show all</h3>
-            </div>
-            <div class="cardContainer">
-                <div class="card">
-                    <div class="play">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="50"
-                            height="50">
-                            <circle cx="12" cy="12" r="10" fill="green" />
-                            <path
-                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"
-                                fill="black" />
-                        </svg>
-
-
-                    </div>
-
-                    <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
-                    <h2>lofi beats</h2>
-                    <p>chill vibes, lofi beats, new tracks everyday...</p>
-                </div>
-                <div class="card">
-                    <div class="play">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="50"
-                            height="50">
-                            <circle cx="12" cy="12" r="10" fill="green" />
-                            <path
-                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"
-                                fill="black" />
-                        </svg>
-
-
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67706f00000002af29338e415c87776e74a574" alt="">
-                    <h2>Today’s Top Hits</h2>
-                    <p>Benson Boone is on top of the Hottest 50!</p>
-                </div>
-                <div class="card">
-                    <div class="play">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="50"
-                            height="50">
-                            <circle cx="12" cy="12" r="10" fill="green" />
-                            <path
-                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"
-                                fill="black" />
-                        </svg>
-
-
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="">
-                    <h2>Chillout Lounge</h2>
-                    <p>Just lean back and enjoy relaxed beats.</p>
-                </div>
-                <div class="card">
-                    <div class="play">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="50"
-                            height="50">
-                            <circle cx="12" cy="12" r="10" fill="green" />
-                            <path
-                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"
-                                fill="black" />
-                        </svg>
-
-
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67706f00000002d771dc645afe9b87978b1d3e" alt="">
-                    <h2>All Out 2020s</h2>
-                    <p>The biggest songs of the 2020s.</p>
-                </div>
-                <div class="card">
-                    <div class="play">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="50"
-                            height="50">
-                            <circle cx="12" cy="12" r="10" fill="green" />
-                            <path
-                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"
-                                fill="black" />
-                        </svg>
-
-
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67706f00000002bdeb1c317ac2dd10f2397e4c" alt="">
-                    <h2>Stress Relief</h2>
-                    <p>Calm your mind from anxiety with gentle piano and ambient music.</p>
-                </div>
-               
-              
-            </div>
-            <div class="rightfoot">
-                
-                <div class="playbar">   
-                    <div class="seekbar">
-                        <div class="circle">
-    
-                        </div>
-                    </div>
-                    <div class="songinfo">
-
-                    </div>
-                    <div class="songsbutton">
-
-                        <img id="previous" src="prevsong.svg" alt="">
-                            <img id="play" src="play.svg" alt="">
-                            <img id="next" src="next.svg" alt="">
-                        
-                    </div>
-                    <div class="songduration">
-
-                    </div>
-
-
-
-                </div>
-                
-
-            </div>
-
-        </div>
     </div>
-    <script src="spotify.js"></script>
+    <div class="main">
+        <div class="page-1">
+            <nav>
+                <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+                    alt="">
+                <div class="nav-part2">
+                    <h4><a href="#">Work</a></h4>
+                    <h4><a href="#">Studio</a></h4>
+                    <h4><a href="#">Contact</a></h4>
 
+
+                </div>
+            </nav>
+            <div class="center">
+                <div class="left">
+                    <h3>
+
+                        Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and
+                        environments.
+                    </h3>
+                </div>
+                <div class="right">
+                    <h1>SPACES <br>
+                        THAT <br>
+                        INSPIRE</h1>
+                </div>
+            </div>
+            <div class="separate">
+
+            </div>
+            <div class="hero">
+                <div class="hero-1"></div>
+                <div class="hero-2"></div>
+                <div class="hero-3"></div>
+            </div>
+
+            <div class="video">
+                <video autoplay muted loop src="vide.mp4"></video>
+            </div>
+        </div>
+        <div class="page-2">
+            <div class="moving-text">
+                <div class="con">
+                    <h1>ENVIRONMENT</h1>
+                    <div class="gola"></div>
+                    <h1>EXPERIENCES</h1>
+                    <div class="gola"></div>
+                    <h1>CONTENT</h1>
+                    <div class="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>ENVIRONMENT</h1>
+                    <div class="gola"></div>
+                    <h1>EXPERIENCES</h1>
+                    <div class="gola"></div>
+                    <h1>CONTENT</h1>
+                    <div class="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>ENVIRONMENT</h1>
+                    <div class="gola"></div>
+                    <h1>EXPERIENCES</h1>
+                    <div class="gola"></div>
+                    <h1>CONTENT</h1>
+                    <div class="gola"></div>
+                </div>
+            </div>
+        </div>
+        <div id="page2-bottom">
+            <h1>We are a group of design- driven, goal-focused creators, producers, and designers who
+                believe that the details make all the difference.</h1>
+            <div id="bottom-part2">
+                <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
+                    alt="">
+                <p>We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas
+                    into reality. We’re here to partner with you through every step of the process and know that
+                    relationships are the most important things we build.</p>
+            </div>
+        </div>
+        <div class="page-3">
+
+            <div class="elem1">
+                <div id="first"
+                    data-image="https://images.unsplash.com/photo-1706396924378-e3d45b4f6d00?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="container">
+                    <div class="transit"></div>
+                    <h1> Air Force 12021</h1>
+                    <h3>Nike <br> experimental</h3>
+                </div>
+                <div data-image="https://images.unsplash.com/photo-1706354924659-582cec69ce3b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="container">
+                    <div class="transit"></div>
+                    <h1>NYFW PopUp</h1>
+                    <h3>Afterpay <br> experimental</h3>
+                </div>
+                <div data-image="https://plus.unsplash.com/premium_photo-1706151506392-c0bdc951db71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="container">
+                    <div class="transit"></div>
+                    <h1> 50th Anniversary</h1>
+                    <h3>Nike <br> experimental</h3>
+                </div>
+                <div data-image="https://plus.unsplash.com/premium_photo-1706727288514-d82077d21cf4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="container">
+                    <div class="transit"></div>
+                    <h1> SOHO NYC</h1>
+                    <h3>Nike <br> experimental</h3>
+                </div>
+                <div data-image="https://plus.unsplash.com/premium_photo-1706078438413-48c282157e4f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="container">
+                    <div class="transit"></div>
+                    <h1> Play New Kidvision</h1>
+                    <h3>Nike <br> experimental</h3>
+                </div>
+                <div data-image="https://images.unsplash.com/photo-1706373193792-52fc0b8b22e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3OXx8fGVufDB8fHx8fA%3D%3D" class="container">
+                    <div class="transit"></div>
+                    <h1> Maker Studio HOI</h1>
+                    <h3>Nike <br> experimental</h3>
+                </div>
+                <div data-image="https://plus.unsplash.com/premium_photo-1706727288514-d82077d21cf4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="container">
+                    <div class="transit"></div>
+                    <h1> SOHO 2023</h1>
+                    <h3>Nike <br> experimental biwan shrestha</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
 </body>
-
 
 </html>
